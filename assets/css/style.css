@@ -1,0 +1,49 @@
+   /* Personalización del scroll */
+   #sidebar {
+    overflow-y: auto;
+    /* activa el scroll vertical */
+}
+
+/* Para Chrome, Safari, Edge, Opera */
+#sidebar::-webkit-scrollbar {
+    width: 1px;
+    /* anchura del scrollbar */
+}
+
+#sidebar::-webkit-scrollbar-track {
+    background: transparent;
+    /* fondo del scrollbar */
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: #3336FF;
+    /* color azul personalizado */
+    border-radius: 1px;
+    /* bordes redondeados */
+}
+
+/* Para Firefox */
+#sidebar {
+    scrollbar-width: thin;
+    /* scrollbar fino */
+    scrollbar-color: #3336FF transparent;
+    /* scrollbar color y fondo */
+}
+
+body {
+    font-family:  'Outfit', sans-serif, monospace;
+    font-size: 15px;
+    color: black
+}
+.b-top-page{
+    background-color: #E5E5E5;
+    color: black;
+    font-size: 13px;
+    padding: 2px;
+    border-radius: 4px;
+}
+.b-top-page:hover{
+    background-color: #3336FF;
+    color: aliceblue;
+    cursor: pointer;
+}
