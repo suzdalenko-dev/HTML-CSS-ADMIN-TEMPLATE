@@ -1,1 +1,2 @@
-<img  src
+<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/0.png" alt="HTML admin demplate beatiful white" width="100%" heigth="333px" />
+<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/1.png" alt="HTML admin demplate beatiful white"  width="100%" heigth="333px" />
