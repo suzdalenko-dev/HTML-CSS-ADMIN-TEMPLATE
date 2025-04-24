@@ -92,7 +92,7 @@ psql
 
 -- Crear usuario 'alexey' con contraseña
 
-CREATE USER alexey WITH PASSWORD 'froxa2030';
+CREATE USER alexey WITH PASSWORD 'asafd343f3';
 
 -- Crear una base de datos (ejemplo: databaseName)
 
@@ -118,7 +118,7 @@ DATABASES = {
 
         'USER': 'alexey',
 
-        'PASSWORD': 'froxa2030',
+        'PASSWORD': '2342c3423c4',
 
         'HOST': 'localhost',
 
