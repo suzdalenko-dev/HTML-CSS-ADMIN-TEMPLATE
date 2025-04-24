@@ -29,3 +29,45 @@ WSGIPythonHome "C:/Python312"
     ErrorLog logs/django_error.log
     CustomLog logs/django_access.log combined
 </VirtualHost>
+
+which python3
+### para ubuntu
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    ServerName localhost
+
+    # Directorio raíz para contenido estático HTML
+    DocumentRoot /var/www/html
+
+    <Directory /var/www/html>
+        Options Indexes FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+
+    # Alias para servir archivos estáticos de Django si haces collectstatic
+    Alias /static /var/www/backend/static
+    <Directory /var/www/backend/static>
+        Require all granted
+    </Directory>
+
+    # Configuración de Django con mod_wsgi
+    WSGIDaemonProcess backend python-path=/var/www/backend python-home=/usr
+    WSGIProcessGroup backend
+    WSGIApplicationGroup %{GLOBAL}
+
+    # Montar Django en /api
+    WSGIScriptAlias /api /var/www/backend/miapp/wsgi.py
+
+    <Directory /var/www/backend/miapp>
+        <Files wsgi.py>
+            Require all granted
+        </Files>
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/django_backend_error.log
+    CustomLog ${APACHE_LOG_DIR}/django_backend_access.log combined
+</VirtualHost>
+
+
