@@ -84,18 +84,22 @@ sudo tail -f /var/log/apache2/error.log
 ### postrgreSQL
 
 sudo apt update
+
 sudo apt install postgresql postgresql-contrib -y
 
 sudo -i -u postgres
 psql
 
 -- Crear usuario 'alexey' con contraseña
+
 CREATE USER alexey WITH PASSWORD 'froxa2030';
 
 -- Crear una base de datos (ejemplo: miappdb)
+
 CREATE DATABASE miappdb WITH OWNER alexey;
 
 -- Darle privilegios completos sobre esa base de datos
+
 GRANT ALL PRIVILEGES ON DATABASE miappdb TO alexey;
 
 \q   -- Para salir
@@ -105,12 +109,19 @@ sudo systemctl restart postgresql
 sudo apt install python3-psycopg2
 
 DATABASES = {
+
     'default': {
+
         'ENGINE': 'django.db.backends.postgresql',
+
         'NAME': 'miappdb',
+
         'USER': 'alexey',
+
         'PASSWORD': 'froxa2030',
+
         'HOST': 'localhost',
+        
         'PORT': '5432',
     }
 }
