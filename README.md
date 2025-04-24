@@ -33,34 +33,37 @@ WSGIPythonHome "C:/Python312"
 which python3
 ### para ubuntu
 
+<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/3.png" alt="HTML admin demplate beatiful white"  width="100%" heigth="333px" />
+
+sudo apt update
+sudo apt install apache2 libapache2-mod-wsgi-py3 python3 -y
+/etc/apache2/sites-available/django.conf
+
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
     ServerName localhost
 
-    # Directorio raíz para contenido estático HTML
+    # Archivos estáticos (sitio clásico)
     DocumentRoot /var/www/html
-
     <Directory /var/www/html>
         Options Indexes FollowSymLinks
         AllowOverride None
         Require all granted
     </Directory>
 
-    # Alias para servir archivos estáticos de Django si haces collectstatic
+    # Archivos estáticos de Django (si usas collectstatic)
     Alias /static /var/www/backend/static
     <Directory /var/www/backend/static>
         Require all granted
     </Directory>
 
-    # Configuración de Django con mod_wsgi
-    WSGIDaemonProcess backend python-path=/var/www/backend python-home=/usr
+    # Django a través de mod_wsgi
+    WSGIDaemonProcess backend python-path=/var/www/backend
     WSGIProcessGroup backend
     WSGIApplicationGroup %{GLOBAL}
+    WSGIScriptAlias /api /var/www/backend/backend/wsgi.py
 
-    # Montar Django en /api
-    WSGIScriptAlias /api /var/www/backend/miapp/wsgi.py
-
-    <Directory /var/www/backend/miapp>
+    <Directory /var/www/backend/backend>
         <Files wsgi.py>
             Require all granted
         </Files>
@@ -70,4 +73,10 @@ which python3
     CustomLog ${APACHE_LOG_DIR}/django_backend_access.log combined
 </VirtualHost>
 
+sudo a2ensite django.conf
+sudo systemctl reload apache2
 
+sudo chown -R www-data:www-data /var/www/backend
+sudo chmod -R 775 /var/www/backend
+
+sudo tail -f /var/log/apache2/error.log
