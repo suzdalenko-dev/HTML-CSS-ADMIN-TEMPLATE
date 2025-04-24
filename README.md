@@ -94,13 +94,13 @@ psql
 
 CREATE USER alexey WITH PASSWORD 'froxa2030';
 
--- Crear una base de datos (ejemplo: miappdb)
+-- Crear una base de datos (ejemplo: databaseName)
 
-CREATE DATABASE miappdb WITH OWNER alexey;
+CREATE DATABASE databaseName WITH OWNER alexey;
 
 -- Darle privilegios completos sobre esa base de datos
 
-GRANT ALL PRIVILEGES ON DATABASE miappdb TO alexey;
+GRANT ALL PRIVILEGES ON DATABASE databaseName TO alexey;
 
 \q   -- Para salir
 
@@ -114,14 +114,14 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql',
 
-        'NAME': 'miappdb',
+        'NAME': 'databaseName',
 
         'USER': 'alexey',
 
         'PASSWORD': 'froxa2030',
 
         'HOST': 'localhost',
-        
+
         'PORT': '5432',
     }
 }
