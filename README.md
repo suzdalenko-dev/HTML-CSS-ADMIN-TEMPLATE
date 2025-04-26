@@ -125,3 +125,28 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+
+País	Código	URL Ejemplo PIB
+Unidos	US	https://api.worldbank.org/v2/country/US/indicator/NY.GDP.MKTP.CD?format=json
+China	CN	https://api.worldbank.org/v2/country/CN/indicator/NY.GDP.MKTP.CD?format=json
+Japón	JP	https://api.worldbank.org/v2/country/JP/indicator/NY.GDP.MKTP.CD?format=json
+España	ES	https://api.worldbank.org/v2/country/ES/indicator/NY.GDP.MKTP.CD?format=json
+
+
+🔗 URL de la API para obtener datos por país
+Puedes realizar solicitudes GET a la API del Banco Mundial para obtener los datos de este indicador en formato JSON. A continuación, se muestran las URLs para algunos países:​
+
+Estados Unidos (US):
+
+https://api.worldbank.org/v2/country/US/indicator/NY.ADJ.NNTY.CD?format=json
+China (CN):
+
+https://api.worldbank.org/v2/country/CN/indicator/NY.ADJ.NNTY.CD?format=json
+Japón (JP):
+
+https://api.worldbank.org/v2/country/JP/indicator/NY.ADJ.NNTY.CD?format=json
+España (ES):
+
+https://api.worldbank.org/v2/country/ES/indicator/NY.ADJ.NNTY.CD?format=json
+Estas URLs te proporcionarán los datos históricos del Ingreso Nacional Neto Ajustado para cada país en formato JSON, que puedes utilizar para análisis y visualizaciones.
