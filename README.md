@@ -149,7 +149,7 @@ https://api.worldbank.org/v2/country/JP/indicator/NY.ADJ.NNTY.CD?format=json
 España (ES):
 
 https://api.worldbank.org/v2/country/ES/indicator/NY.ADJ.NNTY.CD?format=json
-Estas URLs te proporcionarán los datos históricos del Ingreso Nacional Neto Ajustado para cada país en formato JSON, que puedes utilizar para análisis y visualizaciones.
 
+Estas URLs te proporcionarán los datos históricos del Ingreso Nacional Neto Ajustado para cada país en formato JSON, que puedes utilizar para análisis y visualizaciones.
 
 <img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/4.png" alt="HTML admin template Tailwind"  width="100%" heigth="333px" />
