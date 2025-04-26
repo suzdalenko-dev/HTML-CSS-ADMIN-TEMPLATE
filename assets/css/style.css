@@ -16,7 +16,7 @@
 }
 
 #sidebar::-webkit-scrollbar-thumb {
-    background-color: #3336FF;
+    background-color: #fafafa;
     /* color azul personalizado */
     border-radius: 1px;
     /* bordes redondeados */
@@ -26,7 +26,7 @@
 #sidebar {
     scrollbar-width: thin;
     /* scrollbar fino */
-    scrollbar-color: #3336FF transparent;
+    scrollbar-color: #fafafa transparent;
     /* scrollbar color y fondo */
 }
 
@@ -45,5 +45,9 @@ body {
 .b-top-page:hover{
     background-color: #3336FF;
     color: aliceblue;
+    cursor: pointer;
+}
+
+input:hover{
     cursor: pointer;
 }

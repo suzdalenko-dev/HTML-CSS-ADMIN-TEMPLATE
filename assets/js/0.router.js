@@ -1,7 +1,7 @@
 function initRouter() {
     let pageRoute = parseHashRoute();   
     if (pageRoute.view) { loadView(pageRoute.view); }
-    else { loadView('home'); } // Cargar vista por defecto si no hay hash
+    else { loadView('dashboard'); } // Cargar vista por defecto si no hay hash
 }
 
 function loadView(viewName) {
@@ -21,7 +21,7 @@ function loadView(viewName) {
                     let initFunction = window[`${toCamelCase(viewName)}`];
                     if (initFunction) initFunction();
                     else {
-                        alert(`Init function not found for ${viewName} ${toCamelCase(viewName)}`);
+                        console.error(`Init function not found for ${viewName} ${toCamelCase(viewName)}`);
                     }
                 };
                 document.head.appendChild(script);
@@ -29,7 +29,7 @@ function loadView(viewName) {
                 let initFunction = window[`${toCamelCase(viewName)}`];
                 if (initFunction) initFunction();
                 else {
-                    alert(`Init function not found for ${viewName} ${toCamelCase(viewName)}`);
+                    console.error(`Init function not found for ${viewName} ${toCamelCase(viewName)}`);
                 }
             }
         });

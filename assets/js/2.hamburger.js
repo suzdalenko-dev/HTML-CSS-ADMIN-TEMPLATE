@@ -1,12 +1,25 @@
-function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    const menuButton = document.getElementById('menuButton');
-    const content = document.getElementById('content');
-    const isOpen = !sidebar.classList.contains('-translate-x-full');
+function toggleSidebar(userClick) {
+    let sidebar = document.getElementById('sidebar');
+    let content = document.getElementById('content');
 
-    sidebar.classList.toggle('-translate-x-full');
-    content.classList.toggle('md:ml-64');
-    // menuButton.textContent = isOpen ? '☰' : '✕';
+    if (userClick == 'userClick') {
+        // Click manual del usuario
+        let isOpen = !sidebar.classList.contains('-translate-x-full');
+        sidebar.classList.toggle('-translate-x-full');
+        content.classList.toggle('md:ml-64');
+        window.localStorage.setItem('is_sidebar_open', !isOpen);
+    } else {
+        // Al cargar la página
+        let isOpen = window.localStorage.getItem('is_sidebar_open') == 'true';
+        let isActuallyOpen = !sidebar.classList.contains('-translate-x-full');
+        
+        if (isOpen != isActuallyOpen) {
+            sidebar.classList.toggle('-translate-x-full');
+            content.classList.toggle('md:ml-64');
+        }
+    }
 }
 
-toggleSidebar();
+toggleSidebar(null);
+
+console.log(window.localStorage)
