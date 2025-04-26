@@ -1,5 +1,5 @@
-<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/0.png" alt="HTML admin demplate beatiful white" width="100%" heigth="333px" />
-<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/1.png" alt="HTML admin demplate beatiful white"  width="100%" heigth="333px" />
+<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/0.png" alt="HTML admin template beatiful white" width="100%" heigth="333px" />
+<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/1.png" alt="HTML admin template beatiful white"  width="100%" heigth="333px" />
 
 
 LoadFile "C:/Python312/python312.dll"
@@ -33,7 +33,7 @@ WSGIPythonHome "C:/Python312"
 which python3
 ### para ubuntu
 
-<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/3.png" alt="HTML admin demplate beatiful white"  width="100%" heigth="333px" />
+<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/3.png" alt="HTML admin template beatiful white"  width="100%" heigth="333px" />
 
 sudo apt update
 sudo apt install apache2 libapache2-mod-wsgi-py3 python3 -y
@@ -152,4 +152,4 @@ https://api.worldbank.org/v2/country/ES/indicator/NY.ADJ.NNTY.CD?format=json
 Estas URLs te proporcionarán los datos históricos del Ingreso Nacional Neto Ajustado para cada país en formato JSON, que puedes utilizar para análisis y visualizaciones.
 
 
-<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/4.png" alt="HTML admin demplate Tailwind"  width="100%" heigth="333px" />
+<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/4.png" alt="HTML admin template Tailwind"  width="100%" heigth="333px" />
