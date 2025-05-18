@@ -2,6 +2,7 @@
 // Descripción: Script de menú dinámico + guarda estado abierto/cerrado en localStorage
 
 let menuData = [
+    /*
     {
         title: 'Administración',
         icon: '📁',
@@ -70,16 +71,20 @@ let menuData = [
         submenu: [
             { title: 'Ruta', icon: '🗘️', submenu: null }
         ]
-    },
-    {
-        title: 'Producción',
-        icon: '🏭',
-        roles: ['salaproduccion'],
-        submenu: [
-            { title: 'Control Producción', icon: '⚙️', submenu: null },
-            { title: 'Informes Producción', icon: '📊', submenu: null }
+    }, */
+    { title: 'Producción', icon: '🏭', roles: ['salaproduccion'], submenu: [
+            { title: 'Fabrica', icon: '📦', submenu: [
+                    { title: 'Órdenes Fabricación', icon: '🥫' },
+                ]
+            },
+            { title: 'Precios', icon: '💲', submenu: [
+                    { title: 'Proyección', icon: '📈', submenu: null },
+                    { title: 'Artículos', icon: '🛒', submenu: null },
+                ]
+            }
         ]
-    },
+    } 
+    /*
     {
         title: 'Taller',
         icon: '🚰',
@@ -96,11 +101,13 @@ let menuData = [
         submenu: [
             { title: 'Historial Ventas', icon: '📜', submenu: null },
             { title: 'Nueva Venta', icon: '➕', submenu: [
-                { title: 'Cliente Existente', icon: '👤', submenu: null },
-                { title: 'Cliente Nuevo', icon: '🆕', submenu: null }
-            ]}
+                    { title: 'Cliente Existente', icon: '👤', submenu: null },
+                    { title: 'Cliente Nuevo', icon: '🆕', submenu: null }
+                ]
+            }
         ]
     }
+    */
 ];
 
 // Variables
