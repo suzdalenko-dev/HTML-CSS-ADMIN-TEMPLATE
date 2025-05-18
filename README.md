@@ -156,4 +156,4 @@ Estas URLs te proporcionarán los datos históricos del Ingreso Nacional Neto Aj
 
 Calendario de Órdenes Fabricación
 
-<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/4.png" alt="Calendario de Órdenes Fabricación"  width="100%" heigth="333px" />
+<img  src="https://suzdalenko-dev.github.io/HTML-CSS-ADMIN-TEMPLATE/assets/img/5.png" alt="Calendario de Órdenes Fabricación"  width="100%" heigth="333px" />
